@@ -10,15 +10,27 @@
 1. 블록체인 응용 기술 (Advanced Concpets of Blockchain)
 
 ## 블록체인 기술 구현 실습
-### 암호화 기술 심화
-   - **ECDSA** (Elliptic Curve Digital Signature Algorithm) - 키 생성, 서명 및 검증 과정 이해
-   - 해시 함수와 Merkle Tree의 원리 - Python 으로 Merkle Tree 생성 및 검증 실습
-   - Python의 `hashlib`와 `cryptography` 라이브러리를 사용한 암호화 기술 구현
-   - 실제 트랜잭션 서명 및 검증 코드 작성
-
 ### 간단한 블록체인 네트워크 구축
-   - Python 또는 Solidity로 소규모 암호화폐 개발
-   - 트랜잭션 기록, 검증, 체인 연결 로직 구현
+   | **파일명**                                    | **설명**                                              |
+   |-----------------------------------------------|-------------------------------------------------------|
+   | `01_create_and_sign_transaction.py`           | 트랜잭션 생성과 서명 예제.                             |
+   | `02_transaction_broadcast_and_verification.py`| 트랜잭션 전파 및 검증 과정 시뮬레이션.                 |
+   | `03_proof_of_work_block_creation.py`          | PoW(작업 증명) 블록 생성 과정 구현.                   |
+   | `04_smart_contract_execution_example.py`      | 스마트 컨트랙트 실행 간단 예제.                        |
+   | `05_calculate_gas_fee.py`                     | Gas Fee(가스 요금) 계산 예제.                         |
+   | `06_pos_validator_simulation.py`              | PoS(지분 증명) 검증자 역할 시뮬레이션.                 |
+   | `07_state_and_storage_management.py`          | 이더리움 상태(State) 및 스토리지(Storage) 관리 예제.   |
+   | `08_merkle_patricia_trie_structure.py`        | Merkle Patricia Trie 구조 구현.                       |
+   | `09_dapp_simple_voting_system.py`             | DApp(탈중앙화 애플리케이션) 간단한 투표 시스템 예제.   |
+   | `10_blockchain_data_validation.py`            | 블록체인 데이터 검증 및 무결성 확인 구현.              |
+
+### 암호화 기술 심화
+   | **파일명**                                      | **설명**                                                  |
+   |-------------------------------------------------|----------------------------------------------------------|
+   | `11_ecdsa_key_generation_and_signature.py`      | ECDSA를 사용한 키 생성, 서명 및 검증 과정 구현.             |
+   | `12_merkle_tree_creation_and_validation.py`     | Python으로 Merkle Tree 생성 및 검증 실습.                  |
+   | `13_hashing_with_hashlib_and_cryptography.py`   | `hashlib` 및 `cryptography` 라이브러리를 활용한 해싱 구현.  |
+   | `14_transaction_signature_and_validation.py`    | 실제 트랜잭션 서명 및 검증 구현.                           |
 
 ### 스마트 컨트랙트 작성 및 배포
    - Solidity를 사용해 간단한 스마트 컨트랙트 작성 및 테스트
