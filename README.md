@@ -49,11 +49,12 @@
 
 ## 참고자료
 - **공식 문서**
-   - [Bitcoin Developer Documentation](https://developer.bitcoin.org/){: target="_blank"}
-   - [Ethereum Developer Documentation](https://ethereum.org/en/developers/docs/){: target="_blank"}
+   - <a href="https://developer.bitcoin.org/" target="_blank">Bitcoin Developer Documentation</a>
+   - <a href="https://ethereum.org/en/developers/docs/" target="_blank">Ethereum Developer Documentation</a>
+
 - **참고 도서**:
    - Mastering Bitcoin (Andreas Antonopoulos)
    - Mastering Ethereum (Andreas Antonopoulos)
 - **무료 강의**:
-   - Youtube [하지만 비트코인은 실제로 어떻게 작동하나요?](https://www.youtube.com/watch?v=bBC-nXj3Ng4&list=LL&index=10 ){: target="_blank"}
-   - Youtube [Understanding Bitcoin Core : The Reference Implementation](https://www.youtube.com/watch?v=wLYdcH37phE){: target="_blank"}
+   - Youtube <a href="https://www.youtube.com/watch?v=bBC-nXj3Ng4&list=LL&index=10" target="_blank">하지만 비트코인은 실제로 어떻게 작동하나요?</a>
+   - Youtube <a href="https://www.youtube.com/watch?v=wLYdcH37phE" target="_blank">Understanding Bitcoin Core : The Reference Implementation</a>
