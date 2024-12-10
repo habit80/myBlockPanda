@@ -23,10 +23,14 @@ This repository provides a guide and practical examples for operating Bitcoin an
 
 ## Getting Started
 1. Clone the repository:
-
+    ```bash
+    git clone XX
+    ```
 
 1. Install dependencies:
-
+    ```bash
+    pip install -r requirements.txt
+    ```
 
 1. Follow the setup guides in the `docs/` folder to start your Bitcoin or Ethereum node.
 
@@ -41,3 +45,7 @@ This repository provides a guide and practical examples for operating Bitcoin an
    - Node setup: `examples/ethereum/setup_node.sh`
    - Node synchronization check: `examples/ethereum/sync_node.py`
    - Querying blockchain data: `examples/ethereum/query_blockchain.py`
+
+
+## License
+This project is licensed under the MIT License. See `LICENSE` for details.
