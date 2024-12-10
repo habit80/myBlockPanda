@@ -1,4 +1,4 @@
-# 블록체인 : 개념과 실습까지 (feat. python)
+# 블록체인 : 개념과 실습 (feat. python)
 
 - 블록체인의 개념과 기술을 이해하고, 실습을 통해 기초를 다지는 GitHub 레포지토리 제작
 - 개념 소개 자료(PPT)와 예제 코드 공유
@@ -36,7 +36,11 @@
    - Solidity를 사용해 간단한 스마트 컨트랙트 작성 및 테스트
    - Remix IDE를 활용한 배포 실습
 
-### 대용량 트래픽 처리 및 클라우드 경험
+### Bitcoin core code 분석
+   - Bitcoin core gitHub : https://github.com/bitcoin/bitcoin
+   - **업데이트 예정**
+
+### 대용량 트래픽 처리 및 클라우드 경험 (**업데이트 예정**)
 
 1. **대용량 트래픽 이해**
    - Redis, Kafka, RabbitMQ 같은 메시지 큐 시스템 학습
