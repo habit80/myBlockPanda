@@ -55,7 +55,8 @@
 - **공식 문서**
    - <a href="https://developer.bitcoin.org/" target="_blank">Bitcoin Developer Documentation</a>
    - <a href="https://ethereum.org/en/developers/docs/" target="_blank">Ethereum Developer Documentation</a>
-
+- **참고 사이트**
+   - gitHub : [awesome-blockchain](https://github.com/yjjnls/awesome-blockchain/blob/master/README.md)
 - **참고 도서**:
    - Mastering Bitcoin (Andreas Antonopoulos)
    - Mastering Ethereum (Andreas Antonopoulos)
