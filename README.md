@@ -4,10 +4,10 @@
 - 개념 소개 자료(PPT)와 예제 코드 공유
 
 ## 블록체인 기초 개념 (PPT)
-1. 블록체인 소개 (Introduction to Blockchain)
-1. 비트코인 블록체인 동작방식 (How Bitcoin Blockchain works)
-1. 이더리움 블록체인 동작방식 (How Ethereum Blockchain works)
-1. 블록체인 응용 기술 (Advanced Concpets of Blockchain)
+1. 블록체인 소개 ([Introduction to Blockchain](docs/BlkCh_01_IntroductionToBlockchain.pdf))
+1. 비트코인 블록체인 동작방식 ([How Bitcoin Blockchain works](docs/BlkCh_02_HowBitcoinBlockchainWorks.pdf))
+1. 이더리움 블록체인 동작방식 ([How Ethereum Blockchain works](docs/BlkCh_03_HowEthereumBlockchainWorks.pdf))
+1. 블록체인 응용 기술 ([Advanced Concpets of Blockchain]())
 
 ## 블록체인 기술 구현 실습
 ### 간단한 블록체인 네트워크 구축
