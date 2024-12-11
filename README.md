@@ -3,11 +3,15 @@
 - 블록체인의 개념과 기술을 이해하고, 실습을 통해 기초를 다지는 GitHub 레포지토리 제작
 - 개념 소개 자료(PPT)와 예제 코드 공유
 
+---
+
 ## 블록체인 기초 개념 ([docs/](docs/README.md))
 1. 블록체인 소개 ([Introduction to Blockchain](docs/BlkCh_01_IntroductionToBlockchain.pdf))
 1. 비트코인 블록체인 동작방식 ([How Bitcoin Blockchain works](docs/BlkCh_02_HowBitcoinBlockchainWorks.pdf))
 1. 이더리움 블록체인 동작방식 ([How Ethereum Blockchain works](docs/BlkCh_03_HowEthereumBlockchainWorks.pdf))
 1. 블록체인 응용 기술 ([Advanced Concpets of Blockchain]())
+
+---
 
 ## 블록체인 기술 구현 실습 ([examples/](examples/README.md))
 ### 간단한 블록체인 네트워크 구축
@@ -33,7 +37,7 @@
    | [`14_transaction_signature_and_validation.ipynb`](examples/14_transaction_signature_and_validation.ipynb)    | 실제 트랜잭션 서명 및 검증 구현.                           |
 
 
-
+---
 ## 블록체인 노드 운영 실습 ([examples_nodeOperations/](examples_nodeOperations/README.md))
 
 ### 폴더 구조
@@ -54,7 +58,7 @@
    - 블록체인 데이터 쿼리: `examples/ethereum/query_blockchain.py`
 
 
-
+---
 ## 블록체인 입출금 실습 ([examples_depositWithdrawal/](examples_depositWithdrawal/README.md))
 
 ### 폴더 구조
@@ -76,7 +80,7 @@
 
 
 
-
+---
 ## 기타 실습 (**업데이트 예정**)
 
 ### 스마트 컨트랙트 작성 및 배포
@@ -97,7 +101,7 @@
    - AWS, GCP, Azure 중 하나를 집중 학습
    - Docker와 Kubernetes로 컨테이너 환경 운영 실습
 
-
+---
 ## 참고자료
 - **공식 문서**
    - <a href="https://developer.bitcoin.org/" target="_blank">Bitcoin Developer Documentation</a>
