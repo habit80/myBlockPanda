@@ -1,4 +1,7 @@
-## 블록체인 기술 구현 실습
+# 블록체인 기술 구현 실습
+
+## 예제 리스트
+
 ### 간단한 블록체인 네트워크 구축
    | **파일명**                                    | **설명**                                              |
    |----------------------------------------------|-------------------------------------------------------|
@@ -20,3 +23,18 @@
    | [`12_merkle_tree_creation_and_validation.ipynb`](examples/12_merkle_tree_creation_and_validation.ipynb)     | Python으로 Merkle Tree 생성 및 검증 실습.                  |
    | [`13_hashing_with_hashlib_and_cryptography.ipynb`](examples/13_hashing_with_hashlib_and_cryptography.ipynb)   | `hashlib` 및 `cryptography` 라이브러리를 활용한 해싱 구현.  |
    | [`14_transaction_signature_and_validation.ipynb`](examples/14_transaction_signature_and_validation.ipynb)    | 실제 트랜잭션 서명 및 검증 구현.
+
+
+## Google Colab으로 예제 실행 방법
+
+1. 구글 코랩 접속
+
+    https://colab.google/
+
+1. `Open Colab` 클릭
+
+    ![GoogleColab](resources/googlecolab.png)
+
+1. gitHub repository 주소를 입력하고, 올바른 브랜치 설정 후 주피터 노트북 파일 클릭
+
+    ![GoogleColab](resources/googlecolab2.png)
