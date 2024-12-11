@@ -1,46 +1,44 @@
-## Introduction
-This repository demonstrates the implementation of a simple deposit and withdrawal system using blockchain technologies such as Bitcoin and Ethereum. 
-The goal is to provide a practical understanding of:
-- Wallet creation and management.
-- Transaction generation and broadcasting.
-- Interacting with blockchain nodes and smart contracts.
+## 소개
+이 저장소는 비트코인과 이더리움과 같은 블록체인 기술을 사용하여 간단한 입출금 시스템을 구현한 예제를 제공
+- 지갑 생성 및 관리.
+- 트랜잭션 생성 및 전파.
+- 블록체인 노드 및 스마트 컨트랙트와의 상호작용.
 
-## Folder Structure
-- `docs/`: Documentation for concepts and system flow.
-- `examples/`: Practical examples for Bitcoin and Ethereum-based deposit and withdrawal.
-- `requirements.txt`: Python dependencies for the examples.
-- `LICENSE`: License information for the project.
+## 폴더 구조
+- `docs/`: 개념 및 시스템 흐름에 대한 문서.
+- `examples/`: 비트코인 및 이더리움 기반 입출금의 실질적인 예제.
+- `requirements.txt`: 예제를 위한 Python 종속성.
+- `LICENSE`: 프로젝트의 라이선스 정보.
 
-## Requirements
-- Python 3.8 or higher
-- Dependencies listed in `requirements.txt`
+## 요구 사항
+- Python 3.8 이상
+- `requirements.txt`에 나열된 종속성
   - bitcoinlib
   - web3.py
   - eth-keys
-  - other dependencies as required
+  - 기타 필요한 종속성
 
-## Getting Started
-1. Clone the repository:
+## 시작하기
+1. 저장소를 클론합니다:
     ```bash
     git clone XX
     ```
 
-1. Install dependencies:
+1. 종속성을 설치합니다:
     ```bash
     pip install -r requirements.txt
     ```
 
-## Examples
-1. **Bitcoin**
-   - Wallet generation: `examples/bitcoin/generate_wallet.py`
-   - Transaction creation: `examples/bitcoin/create_transaction.py`
-   - Transaction broadcasting: `examples/bitcoin/send_transaction.py`
+## 예제
+1. **비트코인**
+   - 지갑 생성: `examples/bitcoin/generate_wallet.py`
+   - 트랜잭션 생성: `examples/bitcoin/create_transaction.py`
+   - 트랜잭션 전파: `examples/bitcoin/send_transaction.py`
 
-2. **Ethereum**
-   - Wallet generation: `examples/ethereum/generate_wallet.py`
-   - Smart contract interaction: `examples/ethereum/interact_smart_contract.py`
-   - Transaction broadcasting: `examples/ethereum/send_transaction.py`
+2. **이더리움**
+   - 지갑 생성: `examples/ethereum/generate_wallet.py`
+   - 스마트 컨트랙트 상호작용: `examples/ethereum/interact_smart_contract.py`
+   - 트랜잭션 전파: `examples/ethereum/send_transaction.py`
 
-
-## License
-This project is licensed under the MIT License. See `LICENSE` for details.
+## 라이선스
+이 프로젝트는 MIT 라이선스에 따라 라이선스가 부여됩니다. 자세한 내용은 `LICENSE`를 참조하세요.

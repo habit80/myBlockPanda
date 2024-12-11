@@ -1,51 +1,46 @@
-## Introduction
-This repository provides a guide and practical examples for operating Bitcoin and Ethereum blockchain nodes. The focus is on:
-- Setting up and running full nodes.
-- Synchronizing nodes and querying blockchain data.
-- Monitoring and maintaining nodes for optimal performance.
+## 소개
+이 저장소는 비트코인 및 이더리움 블록체인 노드를 운영하기 위한 가이드와 실질적인 예제를 제공
+- 풀 노드 설정 및 실행.
+- 노드 동기화 및 블록체인 데이터 쿼리.
+- 노드 모니터링 및 최적 성능 유지를 위한 관리.
 
+## 폴더 구조
+- `docs/`: 노드 설정, 모니터링 및 데이터 관리에 대한 문서.
+- `examples/`: 비트코인 및 이더리움 노드 운영을 위한 스크립트 및 코드 예제.
+- `requirements.txt`: 예제를 위한 Python 종속성.
+- `LICENSE`: 프로젝트의 라이선스 정보.
 
-## Folder Structure
-- `docs/`: Documentation for node setup, monitoring, and data management.
-- `examples/`: Scripts and code examples for Bitcoin and Ethereum node operations.
-- `requirements.txt`: Python dependencies for the examples.
-- `LICENSE`: License information for the project.
-
-
-## Requirements
-- Operating System: Ubuntu 20.04 (recommended)
-- Python 3.8 or higher
-- Dependencies listed in `requirements.txt`
+## 요구 사항
+- 운영 체제: Ubuntu 20.04 (권장)
+- Python 3.8 이상
+- `requirements.txt`에 나열된 종속성
   - requests
   - web3.py
-  - other necessary libraries
+  - 기타 필요한 라이브러리
 
-
-## Getting Started
-1. Clone the repository:
+## 시작하기
+1. 저장소를 클론합니다:
     ```bash
     git clone XX
     ```
 
-1. Install dependencies:
+1. 종속성을 설치합니다:
     ```bash
     pip install -r requirements.txt
     ```
 
-1. Follow the setup guides in the `docs/` folder to start your Bitcoin or Ethereum node.
+1. `docs/` 폴더의 설정 가이드를 따라 비트코인 또는 이더리움 노드를 시작
 
+## 예제
+1. **비트코인 노드 운영**
+   - 노드 설정: `examples/bitcoin/setup_node.sh`
+   - 노드 동기화 확인: `examples/bitcoin/sync_node.py`
+   - 블록체인 데이터 쿼리: `examples/bitcoin/query_blockchain.py`
 
-## Examples
-1. **Bitcoin Node Operations**
-   - Node setup: `examples/bitcoin/setup_node.sh`
-   - Node synchronization check: `examples/bitcoin/sync_node.py`
-   - Querying blockchain data: `examples/bitcoin/query_blockchain.py`
+2. **이더리움 노드 운영**
+   - 노드 설정: `examples/ethereum/setup_node.sh`
+   - 노드 동기화 확인: `examples/ethereum/sync_node.py`
+   - 블록체인 데이터 쿼리: `examples/ethereum/query_blockchain.py`
 
-2. **Ethereum Node Operations**
-   - Node setup: `examples/ethereum/setup_node.sh`
-   - Node synchronization check: `examples/ethereum/sync_node.py`
-   - Querying blockchain data: `examples/ethereum/query_blockchain.py`
-
-
-## License
-This project is licensed under the MIT License. See `LICENSE` for details.
+## 라이선스
+이 프로젝트는 MIT 라이선스에 따라 라이선스가 부여됩니다. 자세한 내용은 `LICENSE`를 참조하세요.

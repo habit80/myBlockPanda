@@ -3,13 +3,13 @@
 - 블록체인의 개념과 기술을 이해하고, 실습을 통해 기초를 다지는 GitHub 레포지토리 제작
 - 개념 소개 자료(PPT)와 예제 코드 공유
 
-## 블록체인 기초 개념 (PPT)
+## 블록체인 기초 개념 ([docs/](docs/README.md))
 1. 블록체인 소개 ([Introduction to Blockchain](docs/BlkCh_01_IntroductionToBlockchain.pdf))
 1. 비트코인 블록체인 동작방식 ([How Bitcoin Blockchain works](docs/BlkCh_02_HowBitcoinBlockchainWorks.pdf))
 1. 이더리움 블록체인 동작방식 ([How Ethereum Blockchain works](docs/BlkCh_03_HowEthereumBlockchainWorks.pdf))
 1. 블록체인 응용 기술 ([Advanced Concpets of Blockchain]())
 
-## 블록체인 기술 구현 실습
+## 블록체인 기술 구현 실습 ([examples/](examples/README.md))
 ### 간단한 블록체인 네트워크 구축
    | **파일명**                                    | **설명**                                              |
    |----------------------------------------------|-------------------------------------------------------|
@@ -32,6 +32,53 @@
    | [`13_hashing_with_hashlib_and_cryptography.ipynb`](examples/13_hashing_with_hashlib_and_cryptography.ipynb)   | `hashlib` 및 `cryptography` 라이브러리를 활용한 해싱 구현.  |
    | [`14_transaction_signature_and_validation.ipynb`](examples/14_transaction_signature_and_validation.ipynb)    | 실제 트랜잭션 서명 및 검증 구현.                           |
 
+
+
+## 블록체인 노드 운영 실습 ([examples_nodeOperations/](examples_nodeOperations/README.md))
+
+### 폴더 구조
+- `docs/`: 노드 설정, 모니터링 및 데이터 관리에 대한 문서.
+- `examples/`: 비트코인 및 이더리움 노드 운영을 위한 스크립트 및 코드 예제.
+- `requirements.txt`: 예제를 위한 Python 종속성.
+- `LICENSE`: 프로젝트의 라이선스 정보.
+
+### 예제
+1. **비트코인 노드 운영**
+   - 노드 설정: `examples/bitcoin/setup_node.sh`
+   - 노드 동기화 확인: `examples/bitcoin/sync_node.py`
+   - 블록체인 데이터 쿼리: `examples/bitcoin/query_blockchain.py`
+
+2. **이더리움 노드 운영**
+   - 노드 설정: `examples/ethereum/setup_node.sh`
+   - 노드 동기화 확인: `examples/ethereum/sync_node.py`
+   - 블록체인 데이터 쿼리: `examples/ethereum/query_blockchain.py`
+
+
+
+## 블록체인 입출금 실습 ([examples_depositWithdrawal/](examples_depositWithdrawal/README.md))
+
+### 폴더 구조
+- `docs/`: 개념 및 시스템 흐름에 대한 문서.
+- `examples/`: 비트코인 및 이더리움 기반 입출금의 실질적인 예제.
+- `requirements.txt`: 예제를 위한 Python 종속성.
+- `LICENSE`: 프로젝트의 라이선스 정보.
+
+### 예제
+1. **비트코인**
+   - 지갑 생성: `examples/bitcoin/generate_wallet.py`
+   - 트랜잭션 생성: `examples/bitcoin/create_transaction.py`
+   - 트랜잭션 전파: `examples/bitcoin/send_transaction.py`
+
+2. **이더리움**
+   - 지갑 생성: `examples/ethereum/generate_wallet.py`
+   - 스마트 컨트랙트 상호작용: `examples/ethereum/interact_smart_contract.py`
+   - 트랜잭션 전파: `examples/ethereum/send_transaction.py`
+
+
+
+
+## 기타 실습 (**업데이트 예정**)
+
 ### 스마트 컨트랙트 작성 및 배포
    - Solidity를 사용해 간단한 스마트 컨트랙트 작성 및 테스트
    - Remix IDE를 활용한 배포 실습
@@ -40,7 +87,7 @@
    - Bitcoin core gitHub : https://github.com/bitcoin/bitcoin
    - **업데이트 예정**
 
-### 대용량 트래픽 처리 및 클라우드 경험 (**업데이트 예정**)
+### 대용량 트래픽 처리 및 클라우드 경험 
 
 1. **대용량 트래픽 이해**
    - Redis, Kafka, RabbitMQ 같은 메시지 큐 시스템 학습
@@ -57,9 +104,6 @@
    - <a href="https://ethereum.org/en/developers/docs/" target="_blank">Ethereum Developer Documentation</a>
 - **참고 사이트**
    - gitHub : [awesome-blockchain](https://github.com/yjjnls/awesome-blockchain/blob/master/README.md)
-- **참고 도서**:
-   - Mastering Bitcoin (Andreas Antonopoulos)
-   - Mastering Ethereum (Andreas Antonopoulos)
 - **무료 강의**:
    - Youtube <a href="https://www.youtube.com/watch?v=bBC-nXj3Ng4&list=LL&index=10" target="_blank">하지만 비트코인은 실제로 어떻게 작동하나요?</a>
    - Youtube <a href="https://www.youtube.com/watch?v=wLYdcH37phE" target="_blank">Understanding Bitcoin Core : The Reference Implementation</a>
