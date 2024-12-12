@@ -1,5 +1,15 @@
 from bitcoinlib.transactions import Transaction
+from bitcoinlib.wallets import Wallet
 
+def create_wallet(wallet_name):
+    try:
+        wallet = Wallet.create(wallet_name)
+        print(f"Wallet '{wallet_name}' created successfully!")
+        print(f"Address: {wallet.get_key().address}")
+        print(f"Private Key: {wallet.get_key().wif}")
+        return wallet.get_key().wif
+    except Exception as e:
+        print(f"Error creating wallet: {e}")
 # 트랜잭션 생성
 def create_transaction(txid, output_n, sender, receiver, amount_btc, private_key):
     """
@@ -26,6 +36,10 @@ def create_transaction(txid, output_n, sender, receiver, amount_btc, private_key
 
 # 실행 예제
 if __name__ == "__main__":
+
+    wallet_name = "my_test_wallet"
+    private_key = create_wallet(wallet_name)
+
     # 이전 트랜잭션 정보 (테스트넷에서 가져와야 함)
     txid = "previous_transaction_id"
     output_n = 0  # 사용 가능한 출력 인덱스
@@ -34,8 +48,7 @@ if __name__ == "__main__":
     sender = "generated_sender_address"
     receiver = "receiver_address"
     amount_btc = 0.001  # BTC 단위
-    private_key = "generated_private_key"
-
+    
     try:
         transaction = create_transaction(txid, output_n, sender, receiver, amount_btc, private_key)
         print("Serialized Transaction:", transaction)
