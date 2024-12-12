@@ -19,8 +19,7 @@ RUN apt-get update && \
     libgmp-dev \
     python3-dev \
     libgmp3-dev \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
+    && apt-get clean
 
 # 기본 작업 디렉토리 설정
 WORKDIR /app
