@@ -17,6 +17,8 @@ RUN sudo apt-get update && \
     python3 \
     python3-pip \
     libgmp-dev \
+    python3-dev \
+    libgmp3-dev \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
