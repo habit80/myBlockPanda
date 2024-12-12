@@ -8,7 +8,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 LABEL maintainer="your_email@example.com"
 
 # 시스템 업데이트 및 필요한 패키지 설치
-RUN sudo apt-get update && \
+RUN apt-get update && \
     apt-get install -y \
     curl \
     wget \
