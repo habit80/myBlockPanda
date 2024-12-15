@@ -21,6 +21,8 @@ RUN apt-get update && \
     libgmp3-dev \
     && apt-get clean
 
+RUN pip install bitcoinlib web3 eth-keys bip44
+
 # 기본 작업 디렉토리 설정
 WORKDIR /app
 
