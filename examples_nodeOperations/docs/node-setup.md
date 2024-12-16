@@ -1,25 +1,29 @@
 # 노드 설치 및 설정 가이드
 
-이 문서는 **Bitcoin Core**와 **Geth (Go Ethereum)** 노드를 설치하고 설정하는 방법을 설명합니다. 또한, 테스트넷 환경에서 노드를 실행하는 방법에 대해서도 다룹니다.
+이 문서는 **Bitcoin Core**와 **Geth (Go Ethereum)** 노드를 설치하고 설정하는 방법을 설명하고, 테스트넷 환경에서 노드를 실행하는 방법에 대한 설명 페이지 (본 페이지는 ubuntu 20.04 환경 기준으로 작성됨)
 
 ---
 
 ## **1. Bitcoin Core 노드 설치 및 설정**
 
+Bitcoin Core 실행파일을 다운로드하여 bin 디렉토리에서 실행 파일로 설정하는 방법
+
 ### **1.1 설치**
-1. 필수 패키지 업데이트 및 설치:
+
+1. Bitcoin Core 다운로드:
+    - [Bitcoin Core 공식 다운로드 페이지](https://bitcoincore.org/en/download/)에서 최신 버전의 압축 파일을 다운로드
+    - 또는 터미널에서 다운로드
     ```bash
-    sudo apt update
-    sudo apt install -y software-properties-common curl
+    wget https://bitcoincore.org/bin/bitcoin-core-<VERSION>/bitcoin-<VERSION>-x86_64-linux-gnu.tar.gz
     ```
-1. Bitcoin Core PPA 추가:
+1. 압축 해제:
     ```bash
-    sudo add-apt-repository ppa:bitcoin/bitcoin
-    sudo apt update
+    tar -xvf bitcoin-<VERSION>-x86_64-linux-gnu.tar.gz
     ```
-1. Bitcoin Core 설치:
+1. 실행 파일 이동:
+    - 압축 해제된 디렉토리의 bin 폴더에 있는 실행 파일을 이동
     ```bash
-    sudo apt install -y bitcoind bitcoin-cli
+    sudo cp bitcoin-<VERSION>/bin/* /usr/local/bin/
     ```
 
 ### **1.2 설정**
@@ -47,23 +51,33 @@
 
 ## **2. Geth (Go Ethereum) 노드 설치 및 설정**
 
+Geth 실행파일을 다운로드하여 bin 디렉토리에서 실행 파일로 설정하는 방법
+
 ### **2.1 설치**
-1. 필수 패키지 업데이트 및 설치:
+
+1. Geth 다운로드:
+    - [Geth 공식 다운로드 페이지에](https://geth.ethereum.org/downloads/)서 최신 버전의 압축 파일을 다운로드합니다.
+    - 또는 터미널에서 다운로드:
     ```bash
-    sudo apt update
-    sudo apt install -y software-properties-common curl
+    wget https://gethstore.blob.core.windows.net/builds/geth-linux-amd64-<VERSION>.tar.gz
     ```
 
-1. Geth PPA 추가:
+1. 압축 해제:
     ```bash
-    sudo add-apt-repository -y ppa:ethereum/ethereum
-    sudo apt update
+    tar -xvf geth-linux-amd64-<VERSION>.tar.gz
     ```
 
-1. Geth 설치:
+1. 실행 파일 이동:
+    - 압축 해제된 디렉토리의 geth 실행 파일을 이동
     ```bash
-    sudo apt install -y ethereum
+    sudo cp geth-linux-amd64-<VERSION>/geth /usr/local/bin/
     ```
+
+1. 노드 실행:
+    ```bash
+    geth --http --http.addr 0.0.0.0 --http.port 8545
+    ```
+
 
 ### **2.2 설정**
 1. 데이터 디렉토리 생성:
