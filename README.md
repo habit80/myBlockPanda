@@ -1,7 +1,10 @@
 # 블록체인 : 개념과 실습 (feat. python)
 
-- 블록체인의 개념과 기술을 이해하고, 실습을 통해 기초를 다지는 GitHub 레포지토리 제작
-- 개념 소개 자료(PPT)와 예제 코드 공유
+| 최종 수정 날짜 : 2024년 12월 16일
+
+| 작성자 : habit80
+
+최근 트럼프 재임을 앞두고, 미국 정부의 친암호화폐 정책에 대한 기대가 높아지고 있습니다. 암호화폐 성장의 가장 큰 장애물로 여겨졌던 법적 규제가 완화될 가능성이 커지면서, 암호화폐 산업의 비약적인 성장이 예고되고 있습니다. 화폐 정책의 중대한 변곡점에 서 있는 지금, 블록체인의 개념과 기술을 이해하고 이를 실습을 통해 배우는 GitHub 레포지토리를 제작하게 되었습니다.
 
 ---
 
@@ -125,6 +128,7 @@ Bitcoin Core는 비트코인 네트워크의 핵심 역할을 수행하는 **오
    - gitHub : [awesome-blockchain](https://github.com/yjjnls/awesome-blockchain/blob/master/README.md)
    - blogPost : [Ethereum Block](https://iq.opengenus.org/ethereum-block/)
    - blogPost : [Blockchain Architecture Basics: Components, Structure, Benefits & Creation](https://mlsdev.com/blog/156-how-to-build-your-own-blockchain-architecture)
+   - blogPost : [[bitcoind] 로컬에서 실행해보기](https://jason-dev.com/post/bitcoind-%EB%A1%9C%EC%BB%AC%EC%97%90%EC%84%9C-%EC%8B%A4%ED%96%89%ED%95%B4%EB%B3%B4%EA%B8%B0)
    - article : [A Review of Blockchain Technology in Knowledge-Defined Networking, Its Application, Benefits, and Challenges](https://www.mdpi.com/2673-8732/3/3/17)
    
 - **무료 강의**:
