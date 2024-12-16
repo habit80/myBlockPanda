@@ -102,12 +102,17 @@ Bitcoin Core는 비트코인 네트워크의 핵심 역할을 수행하는 **오
 
 
 ---
-## 6. 기타 실습 (**업데이트 예정**)
+
+## 6. Solidity 스마트 컨트랙트 작성 및 배포 (**업데이트 예정**)
 
 ### 스마트 컨트랙트 작성 및 배포
    - Solidity를 사용해 간단한 스마트 컨트랙트 작성 및 테스트
    - Remix IDE를 활용한 배포 실습
 
+
+---
+
+## 7. 기타 실습
 ### 대용량 트래픽 처리 및 클라우드 경험 
 
 1. **대용량 트래픽 이해**
@@ -119,7 +124,7 @@ Bitcoin Core는 비트코인 네트워크의 핵심 역할을 수행하는 **오
    - Docker와 Kubernetes로 컨테이너 환경 운영 실습
 
 ---
-## 7. 참고자료
+## 8. 참고자료
 - **공식 문서**
    - <a href="https://developer.bitcoin.org/" target="_blank">Bitcoin Developer Documentation</a>
    - <a href="https://ethereum.org/en/developers/docs/" target="_blank">Ethereum Developer Documentation</a>
@@ -133,6 +138,7 @@ Bitcoin Core는 비트코인 네트워크의 핵심 역할을 수행하는 **오
    - blogPost : [Blockchain Architecture Basics: Components, Structure, Benefits & Creation](https://mlsdev.com/blog/156-how-to-build-your-own-blockchain-architecture)
    - blogPost : [[bitcoind] 로컬에서 실행해보기](https://jason-dev.com/post/bitcoind-%EB%A1%9C%EC%BB%AC%EC%97%90%EC%84%9C-%EC%8B%A4%ED%96%89%ED%95%B4%EB%B3%B4%EA%B8%B0)
    - article : [A Review of Blockchain Technology in Knowledge-Defined Networking, Its Application, Benefits, and Challenges](https://www.mdpi.com/2673-8732/3/3/17)
+   - course : [크립토좀비](https://cryptozombies.io/ko/course)
    
 - **무료 강의**:
    - Youtube : <a href="https://www.youtube.com/watch?v=bBC-nXj3Ng4&list=LL&index=10" target="_blank">하지만 비트코인은 실제로 어떻게 작동하나요?</a>
@@ -144,3 +150,7 @@ Bitcoin Core는 비트코인 네트워크의 핵심 역할을 수행하는 **오
    - **블록체인 개념구축** | 알조사 주드마이어 외 지음, CRAS 금융경제 연구소 옮김
    - **블록체인 해설서** | 이병욱 지음
 
+- **유용한 툴**
+   - [remix.ethereum](https://remix.ethereum.org/)
+   - [구글 코랩](https://colab.google/)
+   - [AWS EC2 - ubuntu 머신](https://aws.amazon.com/ko/ec2/?gclid=Cj0KCQiAvP-6BhDyARIsAJ3uv7Z0DWjwmEDVmuBx8t6sNwLIYLO-waOcg_J_IV6Sk1pemOVahDI0MLUaAt9UEALw_wcB&trk=bc3c5de1-7376-43c7-ad4f-f0f3f8248023&sc_channel=ps&ef_id=Cj0KCQiAvP-6BhDyARIsAJ3uv7Z0DWjwmEDVmuBx8t6sNwLIYLO-waOcg_J_IV6Sk1pemOVahDI0MLUaAt9UEALw_wcB:G:s&s_kwcid=AL!4422!3!588924203019!e!!g!!aws%20ec2!16390049454!133992834459)
