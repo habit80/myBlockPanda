@@ -5,7 +5,7 @@
 
 ---
 
-## 블록체인 기초 개념 ([docs/](docs/README.md))
+## 1. 블록체인 기초 개념 ([docs/](docs/README.md))
 1. 블록체인 소개 ([Introduction to Blockchain](docs/BlkCh_01_IntroductionToBlockchain.pdf))
 1. 비트코인 블록체인 동작방식 ([How Bitcoin Blockchain works](docs/BlkCh_02_HowBitcoinBlockchainWorks.pdf))
 1. 이더리움 블록체인 동작방식 ([How Ethereum Blockchain works](docs/BlkCh_03_HowEthereumBlockchainWorks.pdf))
@@ -15,7 +15,7 @@
 
 ---
 
-## 블록체인 기술 구현 실습 ([examples_blockchainBasic/](examples_blockchainBasic/README.md))
+## 2. 블록체인 기술 구현 실습 ([examples_blockchainBasic/](examples_blockchainBasic/README.md))
 ### 간단한 블록체인 네트워크 구축
    | **파일명**                                    | **설명**                                              |
    |----------------------------------------------|-------------------------------------------------------|
@@ -40,7 +40,21 @@
 
 
 ---
-## 블록체인 노드 운영 실습 ([examples_nodeOperations/](examples_nodeOperations/README.md))
+
+## 3. BitcoinCore 설치 및 사용 방법 안내 [(examples_bitcoinCore/)](examples_bitcoinCore/README.md)
+
+Bitcoin Core는 비트코인 네트워크의 핵심 역할을 수행하는 **오픈 소스 소프트웨어**이며, 이는 비트코인의 **풀 노드(Full Node)** 구현체로, 블록체인 상의 모든 트랜잭션과 블록을 검증하고 네트워크에 전파할 수 있음. Bitcoin Core는 비트코인 지갑 관리 기능을 내장하고 있어 사용자들이 안전하게 비트코인을 관리할 수 있음.
+
+| 번호 | 제목                                                        | 설명                                                                                      |
+|------|-------------------------------------------------------------|-------------------------------------------------------------------------------------------|
+| 1    | [Bitcoin Core 개요 및 설치](examples_bitcoinCore/01_bitcoin_core_overview_and_installation.md) | Bitcoin Core가 무엇인지, 주요 기능과 설치 방법에 대한 소개 페이지                              |
+| 2    | [Bitcoin Core 사용법: 지갑 및 트랜잭션](examples_bitcoinCore/02_using_wallets_and_transactions.md) | Bitcoin Core의 내장 지갑을 사용하여 비트코인을 관리하는 방법에 대한 소개                           |
+| 3    | [Bitcoin Core 데이터 디렉토리와 설정](examples_bitcoinCore/03_data_directory_and_configuration.md) | `.bitcoin` 디렉토리의 구조와 Bitcoin Core 설정 방법 소개                                        |
+| 4    | [커맨드라인 도구와 고급 기능](examples_bitcoinCore/04_command_line_and_advanced_features.md)      | Bitcoin Core의 커맨드라인 도구를 활용하는 방법과 고급 기능 소개                                   |
+| 5    | [자주 묻는 질문 (FAQ)](examples_bitcoinCore/05_bitcoin_core_faq.md)                             | 본 Github 주인장이 Bitcoin Core를 학습하며 궁금했던 내용 정리해둠                                  |
+
+---
+## 4. 블록체인 노드 운영 실습 ([examples_nodeOperations/](examples_nodeOperations/README.md))
 
 ### 폴더 구조
 - `docs/`: 노드 설정, 모니터링 및 데이터 관리에 대한 문서.
@@ -61,7 +75,7 @@
 
 
 ---
-## 블록체인 입출금 실습 ([examples_depositWithdrawal/](examples_depositWithdrawal/README.md))
+## 5. 블록체인 입출금 실습 ([examples_depositWithdrawal/](examples_depositWithdrawal/README.md))
 
 ### 폴더 구조
 - `docs/`: 개념 및 시스템 흐름에 대한 문서.
@@ -83,15 +97,11 @@
 
 
 ---
-## 기타 실습 (**업데이트 예정**)
+## 6. 기타 실습 (**업데이트 예정**)
 
 ### 스마트 컨트랙트 작성 및 배포
    - Solidity를 사용해 간단한 스마트 컨트랙트 작성 및 테스트
    - Remix IDE를 활용한 배포 실습
-
-### Bitcoin core code 분석
-   - Bitcoin core gitHub : https://github.com/bitcoin/bitcoin
-   - **업데이트 예정**
 
 ### 대용량 트래픽 처리 및 클라우드 경험 
 
@@ -104,13 +114,19 @@
    - Docker와 Kubernetes로 컨테이너 환경 운영 실습
 
 ---
-## 참고자료
+## 7. 참고자료
 - **공식 문서**
    - <a href="https://developer.bitcoin.org/" target="_blank">Bitcoin Developer Documentation</a>
    - <a href="https://ethereum.org/en/developers/docs/" target="_blank">Ethereum Developer Documentation</a>
 - **참고 사이트**
+   - gitHub : [bitcoinCore]()
+   - gitHub : [Learning-Bitcoin-from-the-Command-Line
+](https://github.com/BlockchainCommons/Learning-Bitcoin-from-the-Command-Line/blob/8598756ae138608b21082d210f4f638a4507c67d/A3_0_Using_Bitcoin_Regtest.md#generate-blocks)
    - gitHub : [awesome-blockchain](https://github.com/yjjnls/awesome-blockchain/blob/master/README.md)
-   - crypto study : [crypto study](http://cryptostudy.xyz)
+   - blogPost : [Ethereum Block](https://iq.opengenus.org/ethereum-block/)
+   - blogPost : [Blockchain Architecture Basics: Components, Structure, Benefits & Creation](https://mlsdev.com/blog/156-how-to-build-your-own-blockchain-architecture)
+   - article : [A Review of Blockchain Technology in Knowledge-Defined Networking, Its Application, Benefits, and Challenges](https://www.mdpi.com/2673-8732/3/3/17)
+   
 - **무료 강의**:
-   - Youtube <a href="https://www.youtube.com/watch?v=bBC-nXj3Ng4&list=LL&index=10" target="_blank">하지만 비트코인은 실제로 어떻게 작동하나요?</a>
-   - Youtube <a href="https://www.youtube.com/watch?v=wLYdcH37phE" target="_blank">Understanding Bitcoin Core : The Reference Implementation</a>
+   - Youtube : <a href="https://www.youtube.com/watch?v=bBC-nXj3Ng4&list=LL&index=10" target="_blank">하지만 비트코인은 실제로 어떻게 작동하나요?</a>
+   - Youtube : <a href="https://www.youtube.com/watch?v=wLYdcH37phE" target="_blank">Understanding Bitcoin Core : The Reference Implementation</a>
