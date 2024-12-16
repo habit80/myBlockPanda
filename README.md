@@ -121,6 +121,7 @@ Bitcoin Core는 비트코인 네트워크의 핵심 역할을 수행하는 **오
 - **공식 문서**
    - <a href="https://developer.bitcoin.org/" target="_blank">Bitcoin Developer Documentation</a>
    - <a href="https://ethereum.org/en/developers/docs/" target="_blank">Ethereum Developer Documentation</a>
+
 - **참고 사이트**
    - gitHub : [bitcoinCore]()
    - gitHub : [Learning-Bitcoin-from-the-Command-Line
@@ -134,3 +135,10 @@ Bitcoin Core는 비트코인 네트워크의 핵심 역할을 수행하는 **오
 - **무료 강의**:
    - Youtube : <a href="https://www.youtube.com/watch?v=bBC-nXj3Ng4&list=LL&index=10" target="_blank">하지만 비트코인은 실제로 어떻게 작동하나요?</a>
    - Youtube : <a href="https://www.youtube.com/watch?v=wLYdcH37phE" target="_blank">Understanding Bitcoin Core : The Reference Implementation</a>
+
+- **도서**
+   - 블록체인 키플레이어 (김가영.조원선 지음)
+   - 블록체인 기술과 혁신적 서비스 개발 활용 (비크람 딜론 외 지음, 차연철 옮김)
+   - 블록체인 개념구축 (알조사 주드마이어 외 지음, CRAS 금융경제 연구소 옮김)
+   - 블록체인 해설서 (이병욱 지음)
+
