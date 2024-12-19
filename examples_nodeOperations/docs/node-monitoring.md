@@ -1,6 +1,8 @@
 # Prometheus와 Grafana를 사용한 노드 모니터링
 
-이 문서는 **Prometheus**와 **Grafana**를 사용하여 블록체인 노드의 상태를 모니터링하는 방법, 노드 로그 분석, 그리고 주요 성능 지표를 확인하는 과정을 설명합니다.
+이 문서는 **Prometheus**, **bitcoin exporter** 와 **Grafana**를 사용하여 블록체인 노드의 상태를 모니터링하는 방법, 노드 로그 분석, 그리고 주요 성능 지표를 확인하는 과정을 설명
+
+![prometheus_exporter_grafana.png](res/prometheus_exporter_grafana.png)
 
 ## **1. Prometheus로 노드 모니터링 설정**
 
@@ -23,39 +25,77 @@
 - http://localhost:9090
 
 ### **Step 2: Prometheus 설치**
-- `prometheus.yml` 파일을 수정하여 노드의 메트릭 데이터를 스크래핑하도록 설정합니다.
-- 이더리움 노드(JSON-RPC 활성화)의 예시:
+- `prometheus.yml` 파일을 수정하여 노드의 메트릭 데이터를 스크래핑하도록 설정
+- bitcoin core 노드(JSON-RPC 활성화)의 예시:
     ```yaml
     scrape_configs:
-    - job_name: 'ethereum_node'
+    - job_name: 'bitcoind'
         static_configs:
-        - targets: ['localhost:8545']
+        - targets: ['localhost:9332']
     ```
 
 ### **Step 3: Prometheus 설치**
-- 이더리움 노드를 위한 eth-prom-exporter와 같은 메트릭 익스포터를 사용하거나, RPC 메트릭 데이터를 노출하는 Python 스크립트를 작성합니다.
+- Bitcoin core 노드를 위한 bitcoin-exporter와 같은 메트릭 익스포터를 사용하거나, RPC 메트릭 데이터를 노출하는 Python 스크립트를 작성
 - 예시:
     ```bash
     pip install prometheus_client web3
     ```
 
 
-## **2. Grafana를 사용한 시각화**
+## **2. bitcoin exporter 실행**
+
+- dd
+    ```bash
+    git clone https://github.com/jvstein/bitcoin-prometheus-exporter.git
+    cd bitcoin-prometheus-exporter
+    ```
+
+- dd
+    ```bash
+    docker-compose build
+    docker-compose up
+    ```
+
+
+## **3. Grafana를 사용한 시각화**
 
 ### **Step 1: Grafana 설치**
-1. Grafana 공식 웹사이트에서 최신 버전을 다운로드합니다: [Grafana 다운로드](https://grafana.com/grafana/download).
-1. 설치 후 Grafana 서버를 실행합니다
+1. [Grafana 설치](https://grafana.com/docs/grafana/latest/setup-grafana/installation/debian/)
+    ```bash
+    sudo apt-get install -y apt-transport-https software-properties-common wget
+
+    sudo mkdir -p /etc/apt/keyrings/
+    wget -q -O - https://apt.grafana.com/gpg.key | gpg --dearmor | sudo tee /etc/apt/keyrings/grafana.gpg > /dev/null
+
+    echo "deb [signed-by=/etc/apt/keyrings/grafana.gpg] https://apt.grafana.com stable main" | sudo tee -a /etc/apt/sources.list.d/grafana.list
+
+    echo "deb [signed-by=/etc/apt/keyrings/grafana.gpg] https://apt.grafana.com beta main" | sudo tee -a /etc/apt/sources.list.d/grafana.list
+
+    # Updates the list of available packages
+    sudo apt-get update
+
+    # Installs the latest OSS release:
+    sudo apt-get install grafana
+    ```
+1. 설치 후 Grafana 서버를 실행
     ```bash
     sudo systemctl start grafana-server
     ```
 
 ### **Step 2: Grafana 설치**
-1. Grafana 웹 인터페이스(기본 주소: http://localhost:3000)에 로그인합니다.
-1. "Settings > Data Sources"로 이동하여 새 데이터 소스를 추가합니다.
-1. Prometheus를 선택하고 Prometheus 서버 URL을 입력합니다(예: http://localhost:9090).
+1. Grafana 웹 인터페이스(기본 주소: http://localhost:3000)에 로그인
+    - id : admin
+    - pwd : admin
+1. "Settings > Data Sources"로 이동하여 새 데이터 소스를 추가
+    ![grafana_conf_datasource.png](res/grafana_conf_datasource.png)
+1. Prometheus를 선택하고 Prometheus 서버 URL을 입력(예: http://localhost:9090)
+    ![grafana_conf_prometheus.png](res/grafana_conf_prometheus.png)
+1. result
+![](res/grafana_bitcoind_monitoring.png)
 
-### **Step 3: 대시보드 생성**
-1. 대시보드에서 "Add Query"를 선택하여 Prometheus 메트릭을 기반으로 시각화를 생성합니다.
+
+### **Step 3: 대시보드 import**
+1. 대시보드에서 dashboard file [bitcoin-grafana.json](../prometheus_and_grafana/bitcoin-grafana.json) import
 1. 주요 지표 예시:
     - 노드 동기화 상태: `eth_syncing`
     - 블록 높이: `eth_blockNumber`
