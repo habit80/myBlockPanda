@@ -4,19 +4,20 @@
 sudo apt update
 sudo apt install -y software-properties-common curl
 
-# Bitcoin Core PPA 추가
-sudo add-apt-repository ppa:bitcoin/bitcoin
-sudo apt update
+# Bitcoin Core 다운로드
+wget https://bitcoincore.org/bin/bitcoin-core-28.0/bitcoin-28.0-x86_64-linux-gnu.tar.gz
+tar -xvf bitcoin-28.0-x86_64-linux-gnu.tar.gz
 
-# Bitcoin Core 설치
-sudo apt install -y bitcoind bitcoin-cli
+# 실행 파일 이동
+cd bitcoin-28.0
+sudo cp /bin/* /usr/local/bin
 
 # 데이터 디렉토리 생성
 mkdir -p ~/.bitcoin
 cat <<EOF > ~/.bitcoin/bitcoin.conf
 server=1
-rpcuser=bitcoinuser
-rpcpassword=strongpassword123
+rpcuser=alice
+rpcpassword=password
 testnet=1
 EOF
 
