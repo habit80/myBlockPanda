@@ -1,4 +1,4 @@
-# 블록체인 : 개념과 실습 (feat. python)
+# 블록체인 : 개념과 실습
 
 | 최종 수정 날짜 : 2024년 12월 16일
 
@@ -136,6 +136,8 @@ Bitcoin Core는 비트코인 네트워크의 핵심 역할을 수행하는 **오
    - gitHub : [awesome-blockchain](https://github.com/yjjnls/awesome-blockchain/blob/master/README.md)
    - blogPost : [Ethereum Block](https://iq.opengenus.org/ethereum-block/)
    - blogPost : [Blockchain Architecture Basics: Components, Structure, Benefits & Creation](https://mlsdev.com/blog/156-how-to-build-your-own-blockchain-architecture)
+   - blogpost : [블록체인 - 지갑만들기, 코드 리팩토링 및 블록체인 구현](https://baekspace.tistory.com/189)
+   - blogpost : [블록체인 한 번에 이해하기](https://steemit.com/coinkorea/@hanmomhanda/q6fcw)
    - blogPost : [[bitcoind] 로컬에서 실행해보기](https://jason-dev.com/post/bitcoind-%EB%A1%9C%EC%BB%AC%EC%97%90%EC%84%9C-%EC%8B%A4%ED%96%89%ED%95%B4%EB%B3%B4%EA%B8%B0)
    - article : [A Review of Blockchain Technology in Knowledge-Defined Networking, Its Application, Benefits, and Challenges](https://www.mdpi.com/2673-8732/3/3/17)
    - course : [크립토좀비](https://cryptozombies.io/ko/course)

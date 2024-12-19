@@ -87,7 +87,7 @@ Geth 실행파일을 다운로드하여 bin 디렉토리에서 실행 파일로 
 
 1. 테스트넷 실행 (Goerli Testnet):
     ```bash
-    geth --testnet --http --http.addr 127.0.0.1 --http.port 8545 --http.api "eth,net,web3" --syncmode "light" --datadir ~/.ethereum
+    geth --testnet --http --http.addr 127.0.0.1 --http.port 8545 --http.api "eth,net,web3" --syncmode "snap" --datadir ~/.ethereum
     ```
 
 1. 상태 확인:
@@ -116,7 +116,7 @@ Geth 실행파일을 다운로드하여 bin 디렉토리에서 실행 파일로 
 ### **Ethereum 테스트넷**
 - 테스트넷 설정:
 ```bash
-geth --testnet --http --http.addr 127.0.0.1 --http.port 8545 --http.api "eth,net,web3" --syncmode "light"
+geth --testnet --http --http.addr 127.0.0.1 --http.port 8545 --http.api "eth,net,web3" --syncmode "snap"
 ```
 
 - 테스트넷 블록 확인:

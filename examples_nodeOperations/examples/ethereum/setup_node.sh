@@ -21,7 +21,7 @@ HTTPModules = ["eth", "net", "web3"]
 EOF
 
 # 테스트넷 실행 (Goerli Testnet)
-geth --testnet --http --http.addr 127.0.0.1 --http.port 8545 --http.api "eth,net,web3" --syncmode "light" --datadir ~/.ethereum &
+geth --testnet --http --http.addr 127.0.0.1 --http.port 8545 --http.api "eth,net,web3" --syncmode "snap" --datadir ~/.ethereum &
 
 echo "Ethereum node setup completed!"
 echo "Use 'curl -X POST http://127.0.0.1:8545' to interact with the node."

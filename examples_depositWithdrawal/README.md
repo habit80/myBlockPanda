@@ -44,3 +44,10 @@
    - 지갑 생성: `examples/ethereum/generate_wallet.py`
    - 스마트 컨트랙트 상호작용: `examples/ethereum/interact_smart_contract.py`
    - 트랜잭션 전파: `examples/ethereum/send_transaction.py`
+
+
+## 참고하면 좋은 사이트
+
+- blogpost :
+  - [블록체인 - 지갑만들기, 코드 리팩토링 및 블록체인 구현](https://baekspace.tistory.com/189)
+  - [블록체인 - 트랜잭션 만들기 (1)](https://baekspace.tistory.com/185)

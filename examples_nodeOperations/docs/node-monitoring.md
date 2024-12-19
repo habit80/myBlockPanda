@@ -5,13 +5,22 @@
 ## **1. Prometheus로 노드 모니터링 설정**
 
 ### **Step 1: Prometheus 설치**
-1. Prometheus의 공식 웹사이트에서 최신 버전을 다운로드합니다: [Prometheus 다운로드](https://prometheus.io/download/).
-1. 다운로드한 파일을 추출하고 Prometheus 바이너리를 실행합니다:
+1. Prometheus의 공식 웹사이트에서 최신 버전을 다운로드: [Prometheus 다운로드](https://prometheus.io/download/).
+1. 다운로드한 파일을 추출하고 Prometheus 바이너리를 실행:
    ```bash
    tar -xvzf prometheus*.tar.gz
    cd prometheus-*
+
+   sudo mv prometheus /usr/local/bin/
+   sudo mv promtool /usr/local/bin/
+
+   sudo mkdir -p /etc/prometheus /var/lib/prometheus
+   sudo mv consoles/ console_libraries/ prometheus.yml /etc/prometheus/
+
    ./prometheus --config.file=prometheus.yml
    ```
+1. 접속 확인
+- http://localhost:9090
 
 ### **Step 2: Prometheus 설치**
 - `prometheus.yml` 파일을 수정하여 노드의 메트릭 데이터를 스크래핑하도록 설정합니다.
@@ -34,7 +43,7 @@
 ## **2. Grafana를 사용한 시각화**
 
 ### **Step 1: Grafana 설치**
-1. Grafana 공식 웹사이트에서 최신 버전을 다운로드합니다: Grafana 다운로드.
+1. Grafana 공식 웹사이트에서 최신 버전을 다운로드합니다: [Grafana 다운로드](https://grafana.com/grafana/download).
 1. 설치 후 Grafana 서버를 실행합니다
     ```bash
     sudo systemctl start grafana-server

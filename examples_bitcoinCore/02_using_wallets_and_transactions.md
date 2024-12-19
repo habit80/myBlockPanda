@@ -44,7 +44,7 @@ Bitcoin Core의 지갑 데이터는 `wallet.dat` 파일에 저장됨
 지갑 암호화를 통해 보안을 강화할 수 있음
 - CLI:
   ```bash
-  bitcoin-cli encryptwallet "your-secure-password"
+  bitcoin-cli -rpcwallet="wallet-name" encryptwallet "your-secure-password"
   ```
 - GUI:
     - 메뉴에서 "Settings > Encrypt Wallet"을 선택

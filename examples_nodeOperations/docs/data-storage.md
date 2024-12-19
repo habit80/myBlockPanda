@@ -40,10 +40,10 @@
       ```bash
       bitcoind -prune=550
       ```
-1. Light Node 사용 (Ethereum):
+1. Snap Node 사용 (Ethereum):
    - 라이트 클라이언트 모드로 실행:
       ```bash
-      geth --syncmode "light"
+      geth --syncmode "snap"
       ```
 
 ## **3. 데이터 백업 방법**
