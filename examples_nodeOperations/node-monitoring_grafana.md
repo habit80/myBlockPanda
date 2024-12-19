@@ -90,16 +90,16 @@
     ![grafana_conf_datasource.png](res/grafana_conf_datasource.png)
 1. Prometheus를 선택하고 Prometheus 서버 URL을 입력(예: http://localhost:9090)
     ![grafana_conf_prometheus.png](res/grafana_conf_prometheus.png)
-1. result
-![](res/grafana_bitcoind_monitoring.png)
 
 
 ### **Step 3: 대시보드 import**
-1. 대시보드에서 dashboard file [bitcoin-grafana.json](../prometheus_and_grafana/bitcoin-grafana.json) import
+1. 대시보드에서 dashboard file [bitcoin-grafana.json](../prometheus_and_grafana/bitcoin-grafana.json) 를 임포트 시키기
 1. 주요 지표 예시:
-    - 노드 동기화 상태: `eth_syncing`
-    - 블록 높이: `eth_blockNumber`
-    - 네트워크 트래픽: 노드의 트래픽 메트릭.
+    - 블록 생성 속도: `Block Creation Rate`
+    - 채굴 난이도: `Difficulty`
+    - 네트워크 해시율: `Network Hash Rate`
+    - 예상 트랜잭션 수수료: `Estimated Fee`
+        ![grafana_bitcoind_monitoring.png](res/grafana_bitcoind_monitoring.png)
 
 
 ## **3. 노드 로그 분석**
