@@ -2,9 +2,9 @@ import requests
 from requests.auth import HTTPBasicAuth
 
 # Bitcoin Core RPC 설정
-RPC_USER = "bitcoinuser"
-RPC_PASSWORD = "strongpassword123"
-RPC_PORT = 18332  # Testnet 포트
+RPC_USER = "alice"
+RPC_PASSWORD = "password"
+RPC_PORT = 8332  # Testnet 포트
 RPC_URL = f"http://127.0.0.1:{RPC_PORT}/"
 
 def rpc_request(method, params=None):
