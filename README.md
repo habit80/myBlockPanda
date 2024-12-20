@@ -100,7 +100,7 @@ Bitcoin Core는 비트코인 네트워크의 핵심 역할을 수행하는 **오
 
 ---
 
-## 6. Solidity 스마트 컨트랙트 작성 및 배포
+## 6. Solidity 스마트 컨트랙트 작성 및 배포([examples_solidity/](./examples_solidity/solidity_smart_contract_deployment.md))
 
 ### 스마트 컨트랙트 작성 및 배포
    - [Solidity를 사용해 간단한 스마트 컨트랙트 작성 및 테스트](./examples_solidity/solidity_cryptozombies.md)
@@ -136,5 +136,3 @@ Bitcoin Core는 비트코인 네트워크의 핵심 역할을 수행하는 **오
 - **무료 강의**:
    - Youtube : <a href="https://www.youtube.com/watch?v=bBC-nXj3Ng4&list=LL&index=10" target="_blank">하지만 비트코인은 실제로 어떻게 작동하나요?</a>
    - Youtube : <a href="https://www.youtube.com/watch?v=wLYdcH37phE" target="_blank">Understanding Bitcoin Core : The Reference Implementation</a>
-=======
->>>>>>> main
