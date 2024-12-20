@@ -1,56 +1,78 @@
-from bitcoinlib.transactions import Transaction
-from bitcoinlib.wallets import Wallet
+# -*- coding: utf-8 -*-
+#
+#    BitcoinLib - Python Cryptocurrency Library
+#
+#    EXAMPLES - Wallets and Transactions
+#
+#    © 2018 February - 1200 Web Development <http://1200wd.com/>
+#
+# source from : https://github.com/1200wd/bitcoinlib/blob/master/examples/wallets_transactions.py
 
-def create_wallet(wallet_name):
-    try:
-        wallet = Wallet.create(wallet_name)
-        print(f"Wallet '{wallet_name}' created successfully!")
-        print(f"Address: {wallet.get_key().address}")
-        print(f"Private Key: {wallet.get_key().wif}")
-        return wallet.get_key().wif
-    except Exception as e:
-        print(f"Error creating wallet: {e}")
-# 트랜잭션 생성
-def create_transaction(txid, output_n, sender, receiver, amount_btc, private_key):
-    """
-    트랜잭션 생성 및 서명.
-    Args:
-        txid (str): 이전 트랜잭션 ID.
-        output_n (int): 이전 트랜잭션의 출력 인덱스.
-        sender (str): 송신자 주소.
-        receiver (str): 수신자 주소.
-        amount_btc (float): 전송 금액 (BTC 단위).
-        private_key (str): 송신자의 개인 키.
-    Returns:
-        str: 직렬화된 트랜잭션 데이터.
-    """
-    # BTC -> Satoshi 변환
-    amount_satoshi = int(amount_btc * 100_000_000)
+import os
+from pprint import pprint
+from bitcoinlib.wallets import Wallet, BCL_DATABASE_DIR
 
-    # 트랜잭션 생성
-    tx = Transaction()
-    tx.add_input(txid, output_n, sender)  # 입력 추가
-    tx.add_output(receiver, amount_satoshi)  # 출력 추가
-    tx.sign(private_key)  # 서명
-    return tx.serialize()
+# First recreate database to avoid already exist errors
+test_databasefile = os.path.join(BCL_DATABASE_DIR, 'bitcoinlib.test.sqlite')
+test_database = 'sqlite:///' + test_databasefile
 
-# 실행 예제
-if __name__ == "__main__":
+# If database file already exists, remove it to avoid conflicts
+if os.path.isfile(test_databasefile):
+    os.remove(test_databasefile)
 
-    wallet_name = "my_test_wallet"
-    private_key = create_wallet(wallet_name)
+# === Create a wallet and a simple transaction ===
+print("\n=== Create a wallet and a simple transaction ===")
+# Create a wallet called 'wlttest1' using the test network and specify a custom database URI
+wlt = Wallet.create('wlttest1', network='bitcoinlib_test', db_uri=test_database)
 
-    # 이전 트랜잭션 정보 (테스트넷에서 가져와야 함)
-    txid = "previous_transaction_id"
-    output_n = 0  # 사용 가능한 출력 인덱스
+# Get the key for this wallet
+wlt.get_key()
 
-    # 송신자와 수신자 정보
-    sender = "generated_sender_address"
-    receiver = "receiver_address"
-    amount_btc = 0.001  # BTC 단위
-    
-    try:
-        transaction = create_transaction(txid, output_n, sender, receiver, amount_btc, private_key)
-        print("Serialized Transaction:", transaction)
-    except Exception as e:
-        print("Error creating transaction:", e)
+# Update UTXOs (this creates some test unspent outputs for the wallet)
+wlt.utxos_update()
+
+# Print wallet information
+wlt.info()
+
+# Get the destination key (to send funds to the same wallet)
+to_key = wlt.get_key()
+
+# Create a transaction to send 50,000,000 satoshis (0.5 BTC) to the destination key
+print("\n- Create transaction (send to own wallet)")
+t = wlt.send_to(to_key.address, 50000000)
+
+# Print transaction information
+t.info()
+
+# Print updated wallet info after the transaction
+print("\n- Successfully send, updated wallet info:")
+wlt.info()
+
+# === Create a wallet, generate 6 UTXOs and create a sweep transaction ===
+print("\n=== Create a wallet, generate 6 UTXOs and create a sweep transaction ===")
+# Create another wallet called 'wlttest2' using the test network and custom database URI
+wlt = Wallet.create('wlttest2', network='bitcoinlib_test', db_uri=test_database)
+
+# Generate 3 new keys for this wallet
+wlt.get_keys(number_of_keys=3)
+
+# Update UTXOs (this generates some test UTXOs for the wallet)
+wlt.utxos_update()
+
+# Print wallet information
+wlt.info()
+
+# Get the destination key (to sweep funds to this address)
+to_key = wlt.get_key()
+
+# Create a sweep transaction that sends all the funds to another address
+print("\n- Create transaction to sweep wallet")
+t = wlt.sweep('21Cr5enTHDejL7rQfyzMHQK3i7oAN3TZWDb')
+
+# Print transaction information
+t.info()
+
+# Print updated wallet info after the sweep transaction
+print("\n- Successfully send, updated wallet info:")
+wlt.info()
+
