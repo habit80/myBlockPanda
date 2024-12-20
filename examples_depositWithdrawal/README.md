@@ -37,13 +37,12 @@
 ## 예제
 1. **비트코인**
    - 지갑 생성: `examples/bitcoin/generate_wallet.py`
-   - 트랜잭션 생성: `examples/bitcoin/create_transaction.py`
-   - 트랜잭션 전파: `examples/bitcoin/send_transaction.py`
+   - 트랜잭션 생성, 전파 : `examples/bitcoin/create_transaction.py`
 
 2. **이더리움**
    - 지갑 생성: `examples/ethereum/generate_wallet.py`
-   - 스마트 컨트랙트 상호작용: `examples/ethereum/interact_smart_contract.py`
-   - 트랜잭션 전파: `examples/ethereum/send_transaction.py`
+   - 스마트 컨트랙트 상호작용: 
+   - 트랜잭션 전파: 
 
 
 ## 참고하면 좋은 사이트
