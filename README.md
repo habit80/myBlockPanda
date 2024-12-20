@@ -30,7 +30,6 @@
    | [`06_pos_validator_simulation.ipynb`](examples_blockchainBasic/06_pos_validator_simulation.ipynb)              | PoS(지분 증명) 검증자 역할 시뮬레이션.                 |
    | [`07_state_and_storage_management.ipynb`](examples_blockchainBasic/07_state_and_storage_management.ipynb)          | 이더리움 상태(State) 및 스토리지(Storage) 관리 예제.   |
    | [`08_merkle_patricia_trie_structure.ipynb`](examples_blockchainBasic/08_merkle_patricia_trie_structure.ipynb)        | Merkle Patricia Trie 구조 구현.                       |
-   | [`09_dapp_simple_voting_system.ipynb`](examples_blockchainBasic/09_dapp_simple_voting_system.ipynb)             | DApp(탈중앙화 애플리케이션) 간단한 투표 시스템 예제.   |
    | [`10_blockchain_data_validation.ipynb`](examples_blockchainBasic/10_blockchain_data_validation.ipynb)            | 블록체인 데이터 검증 및 무결성 확인 구현.              |
 
 ### 암호화 기술 심화
