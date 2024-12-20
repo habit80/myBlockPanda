@@ -1,6 +1,6 @@
-# CryptoZombies Solidity Study Repository
+# CryptoZombies Solidity Study
 
-이 저장소는 **CryptoZombies** 를 통해 Solidity와 Web3.js를 학습한 내용을 정리한 프로젝트입니다.  
+이 저장소는 [**CryptoZombies**](https://cryptozombies.io/ko/course) 를 통해 Solidity와 Web3.js를 학습한 내용을 정리한 프로젝트입니다.  
 Solidity의 기본 문법부터 ERC721 표준, SafeMath, Web3.js 등을 활용하여 블록체인 애플리케이션의 기본 개념을 익혔습니다.
 
 ## 학습 내용
@@ -39,14 +39,16 @@ Solidity의 기본 문법부터 ERC721 표준, SafeMath, Web3.js 등을 활용�
 
 ---
 
-## 폴더 구조
+## [폴더 구조](./cryptozombies/zombiefactory.sol)
 ```
-📂 src/
-├── 📂 contracts/
-│ ├── ZombieFactory.sol # 기본 Zombie 생성 컨트랙트
-│ ├── ZombieFeeding.sol # Zombie Feeding 로직 추가
-│ ├── ZombieOwnership.sol # ERC721 표준을 활용한 소유권 관리 ├── 📂 scripts/
-│ ├── deploy.js # Web3.js로 컨트랙트 배포 스크립트
-│ ├── interact.js # 컨트랙트와 상호작용 스크립트
-├── README.md # 프로젝트 설명 파일
+📂 cryptozombies/
+├── erc721.sol
+├── index.html
+├── ownable.sol
+├── safemath.sol
+├── zombieattack.sol
+├── zombiefactory.sol
+├── zombiefeeding.sol
+├── zombiehelper.sol
+└── zombieownership.sol
 ```

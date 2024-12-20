@@ -60,7 +60,7 @@ Bitcoin Core는 비트코인 네트워크의 핵심 역할을 수행하는 **오
 ## 4. 블록체인 노드 운영 실습 ([examples_nodeOperations/](examples_nodeOperations/README.md))
 
 비트코인 및 이더리움 블록체인 노드를 운영하기 위한 가이드와 실질적인 예제를 제공 및 노드운영 관련한 시각화 툴 사용법 설명
-- 풀 노드 설정 및 실행
+- 풀 노드 설정 및 실행 (`Bitcoin Core` , `Geth` , `Infura`)
 - 노드 동기화 및 블록체인 데이터 쿼리
 - 노드 모니터링 및 최적 성능 유지를 위한 관리를 위한 시각화 툴 (`prometheus` , `bitcoin exporter` , `grafana`)
 
@@ -75,17 +75,6 @@ Bitcoin Core는 비트코인 네트워크의 핵심 역할을 수행하는 **오
   - 비트코인 및 이더리움 노드 운영을 위한 스크립트 및 코드 예제
 - `requirements.txt`:
   - 예제를 위한 Python 패키지
-
-### 예제
-1. **비트코인 노드 운영**
-   - 노드 설정: `bitcoin/setup_node.sh`
-   - 노드 동기화 확인: `bitcoin/sync_node.py`
-   - 블록체인 데이터 쿼리: `bitcoin/query_blockchain.py`
-
-2. **이더리움 노드 운영**
-   - 노드 설정: `ethereum/setup_node.sh`
-   - 노드 동기화 확인: `ethereum/sync_node.py`
-   - 블록체인 데이터 쿼리: `ethereum/query_blockchain.py`
 
 
 ---
@@ -110,19 +99,18 @@ Bitcoin Core는 비트코인 네트워크의 핵심 역할을 수행하는 **오
    - 트랜잭션 전파: `ethereum/send_transaction.py`
 
 
-
 ---
 
-## 6. Solidity 스마트 컨트랙트 작성 및 배포 (**업데이트 예정**)
+## 6. Solidity 스마트 컨트랙트 작성 및 배포
 
 ### 스마트 컨트랙트 작성 및 배포
-   - Solidity를 사용해 간단한 스마트 컨트랙트 작성 및 테스트 (feat. [Cryptozombie](https://cryptozombies.io/ko/course))
-   - Remix IDE를 활용한 배포 실습
+   - [Solidity를 사용해 간단한 스마트 컨트랙트 작성 및 테스트](./examples_solidity/solidity_cryptozombies.md)
+   - [스마트 컨트랙트 이더리움 테스트넷(Sepolia) 배포](./examples_solidity/solidity_smart_contract_deployment.md)
 
 
 ---
 
-## 7. 기타 실습
+## 7. 기타 실습 (업데이트 예정)
 ### 대용량 트래픽 처리 및 클라우드 경험 
 
 1. **대용량 트래픽 이해**
@@ -135,15 +123,9 @@ Bitcoin Core는 비트코인 네트워크의 핵심 역할을 수행하는 **오
 
 ---
 ## 8. 참고자료
-- **공식 문서**
-   - <a href="https://developer.bitcoin.org/" target="_blank">Bitcoin Developer Documentation</a>
-   - <a href="https://ethereum.org/en/developers/docs/" target="_blank">Ethereum Developer Documentation</a>
-
 - **참고 사이트**
-   - gitHub : [bitcoinCore]()
-   - gitHub : [Learning-Bitcoin-from-the-Command-Line
-](https://github.com/BlockchainCommons/Learning-Bitcoin-from-the-Command-Line/blob/8598756ae138608b21082d210f4f638a4507c67d/A3_0_Using_Bitcoin_Regtest.md#generate-blocks)
-   - gitHub : [awesome-blockchain](https://github.com/yjjnls/awesome-blockchain/blob/master/README.md)
+   - gitHub : [bitcoinCore](https://github.com/bitcoin/bitcoin)
+   - gitHub : [bitcoin prometheus exporter](https://github.com/jvstein/bitcoin-prometheus-exporter)
    - blogPost : [Ethereum Block](https://iq.opengenus.org/ethereum-block/)
    - blogPost : [Blockchain Architecture Basics: Components, Structure, Benefits & Creation](https://mlsdev.com/blog/156-how-to-build-your-own-blockchain-architecture)
    - blogpost : [블록체인 - 지갑만들기, 코드 리팩토링 및 블록체인 구현](https://baekspace.tistory.com/189)
@@ -155,14 +137,3 @@ Bitcoin Core는 비트코인 네트워크의 핵심 역할을 수행하는 **오
 - **무료 강의**:
    - Youtube : <a href="https://www.youtube.com/watch?v=bBC-nXj3Ng4&list=LL&index=10" target="_blank">하지만 비트코인은 실제로 어떻게 작동하나요?</a>
    - Youtube : <a href="https://www.youtube.com/watch?v=wLYdcH37phE" target="_blank">Understanding Bitcoin Core : The Reference Implementation</a>
-
-- **도서**
-   - **블록체인 키플레이어** | 김가영.조원선 지음
-   - **블록체인 기술과 혁신적 서비스 개발 활용** | 비크람 딜론 외 지음, 차연철 옮김
-   - **블록체인 개념구축** | 알조사 주드마이어 외 지음, CRAS 금융경제 연구소 옮김
-   - **블록체인 해설서** | 이병욱 지음
-
-- **유용한 툴**
-   - [remix.ethereum](https://remix.ethereum.org/)
-   - [구글 코랩](https://colab.google/)
-   - [AWS EC2 - ubuntu 머신](https://aws.amazon.com/ko/ec2/?gclid=Cj0KCQiAvP-6BhDyARIsAJ3uv7Z0DWjwmEDVmuBx8t6sNwLIYLO-waOcg_J_IV6Sk1pemOVahDI0MLUaAt9UEALw_wcB&trk=bc3c5de1-7376-43c7-ad4f-f0f3f8248023&sc_channel=ps&ef_id=Cj0KCQiAvP-6BhDyARIsAJ3uv7Z0DWjwmEDVmuBx8t6sNwLIYLO-waOcg_J_IV6Sk1pemOVahDI0MLUaAt9UEALw_wcB:G:s&s_kwcid=AL!4422!3!588924203019!e!!g!!aws%20ec2!16390049454!133992834459)
