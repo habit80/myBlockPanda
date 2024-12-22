@@ -87,15 +87,12 @@ Bitcoin Core는 비트코인 네트워크의 핵심 역할을 수행하는 **오
 - `requirements.txt`: 예제를 위한 Python 종속성.
 
 ### 예제
-1. **비트코인**
-   - 지갑 생성: `bitcoin/generate_wallet.py`
-   - 트랜잭션 생성: `bitcoin/create_transaction.py`
-   - 트랜잭션 전파: `bitcoin/send_transaction.py`
-
-2. **이더리움**
-   - 지갑 생성: `ethereum/generate_wallet.py`
-   - 스마트 컨트랙트 상호작용: `ethereum/interact_smart_contract.py`
-   - 트랜잭션 전파: `ethereum/send_transaction.py`
+1. [입출금 시스템 개념 정리](./examples_depositWithdrawal/docs/concepts.md)
+   - 블록체인 기반 입출금 시스템은 사용자가 자산을 입금하고 출금할 수 있도록 하는 핵심적인 기능을 제공
+1. [Hierarchical Deterministic Wallet (HD Wallet)](./examples_depositWithdrawal/docs/hd-wallet.md)
+   - HD Wallet은 블록체인 지갑의 표준으로, 하나의 시드(seed)로부터 여러 키를 생성할 수 있는 구조를 제공
+1. **[블록체인 입출금 및 이더리움 송금 구조 이해](./examples_depositWithdrawal/docs/transaction-flow.md)**
+   - 이 문서는 블록체인 기반 입출금 시스템의 처리 흐름과 이더리움 네트워크에서 송금이 이루어지는 과정을 자료구조 관점에서 단계별로 설명
 
 
 ---
