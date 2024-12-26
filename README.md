@@ -91,6 +91,8 @@ Bitcoin Core는 비트코인 네트워크의 핵심 역할을 수행하는 **오
    - 블록체인 기반 입출금 시스템은 사용자가 자산을 입금하고 출금할 수 있도록 하는 핵심적인 기능을 제공
 1. [Hierarchical Deterministic Wallet (HD Wallet)](./examples_depositWithdrawal/docs/hd-wallet.md)
    - HD Wallet은 블록체인 지갑의 표준으로, 하나의 시드(seed)로부터 여러 키를 생성할 수 있는 구조를 제공
+1. **[비트코인 지갑 생성 가이드: 시드 문구에서 주소 생성까지](./examples_depositWithdrawal/docs/bitcoin_wallet_creation.md)**
+   - 이 문서는 비트코인 지갑이 어떻게 생성되는지, 작동 원리는 무엇인지, 그리고 BIP-39, BIP-32, BIP-44, BIP-148과 같은 주요 표준이 지갑 기능 및 트랜잭션 효율성을 어떻게 지원하는지 단계별로 설명
 1. **[블록체인 입출금 및 이더리움 송금 구조 이해](./examples_depositWithdrawal/docs/transaction-flow.md)**
    - 이 문서는 블록체인 기반 입출금 시스템의 처리 흐름과 이더리움 네트워크에서 송금이 이루어지는 과정을 자료구조 관점에서 단계별로 설명
 
