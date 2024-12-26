@@ -118,3 +118,4 @@ HD 지갑의 복원은 시드와 결정론적 키 생성 방식을 이용
 ## 6. 참고
 
 - blogpost : [What is a Seed Phrase?](https://www.babypips.com/crypto/learn/what-is-a-seed-phrase)
+- [learnmeabitcoin](https://learnmeabitcoin.com/beginners/guide/segwit/)
